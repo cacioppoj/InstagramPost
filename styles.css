@@ -1,0 +1,75 @@
+body{
+    background: black;
+    margin:0;
+}
+div.post{
+    background: white;
+    margin-top: 10px;
+    width: 600px;
+    height: 800px;
+    margin: auto;
+}
+.post-head{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    height: 60px;
+}
+.head-icon2 h3{
+    margin-bottom: 0;
+}
+.head-icon2 p{
+    margin-top:0;
+    width:130px; 
+    height:auto; 
+}
+div.head-icon3{
+    display: flex;
+    padding: 10px;
+    width: 660px;
+    justify-content:right;
+    height: 80px;
+    align-items: center;
+}
+button{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+}
+button > div{
+    background: black;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+button:hover div:first-child{
+    transform: rotate(45deg);
+}
+button:hover div:nth-child(2){
+    opacity: 0;
+}
+button:hover div:last-child{
+    transform: rotate(-45deg);
+}
+.container-icons{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    justify-content: space-between;
+}
+div.post-bookmark{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+.post-body img{
+    width: 100%;
+}
